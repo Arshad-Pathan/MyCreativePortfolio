@@ -27,12 +27,8 @@ body{
     gap: 10vh 0;
 }
 
-.main div{
-    height: 70vh;
-}
-
 .hero{
-    height: 70vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -95,8 +91,20 @@ body{
     border-left: 3px dashed #000;
 }
 .grid4 a{
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     color: #000;
+}
+.grid4 a:hover{
+    text-decoration: underline;
+}
+
+
+.skills{
+    height: 100vh;
+    background-color: aquamarine;
+}
+.footer{
+    background-color: aquamarine;
 }
