@@ -41,7 +41,7 @@ body{
 .hero .hero_grid{
     height: auto;
     padding: 18px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 
 .hero .grid1{
@@ -49,6 +49,8 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
+    border-right: 3px dashed #000;
+    border-bottom: 3px dashed #000;
 }
 .grid1 .main_heading{
     font-family: "Space Grotesk", serif;
@@ -84,3 +86,17 @@ body{
     opacity: 50%;
 } 
 
+.hero .grid4{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 16px;
+    border-top: 3px dashed #000;
+    border-left: 3px dashed #000;
+}
+.grid4 a{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
