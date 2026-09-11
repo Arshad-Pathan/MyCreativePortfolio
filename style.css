@@ -6,7 +6,9 @@
     font-size: 18px;
 }
 body{
-    padding: 0% 10%;
+    background: fixed url(bg.svg);
+    background-size: 30% auto;
+    background-repeat: repeat;
 }
 .header{
     height: auto;
@@ -24,15 +26,24 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10vh 0;
+    padding: 0 10%;
 }
-
+.section_label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #525252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .hero{
-    height: 100vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-
+    backdrop-filter: blur(1px);
+    margin: 2.5vh 0 15vh 0;
+    background: #fff;
 }
 .hero .hero_grid{
     height: auto;
@@ -96,15 +107,100 @@ body{
     font-weight: 400;
     color: #000;
 }
+.grid4 a p{
+    position: relative;
+    display: inline;
+    opacity: 0;
+    font-size: 14px;
+    left: -10px;
+    transition: .3s ease-in;
+}
 .grid4 a:hover{
     text-decoration: underline;
 }
-
-
-.skills{
-    height: 100vh;
-    background-color: aquamarine;
+.grid4 a:hover p{
+    display: inline;
+    opacity: 1;
+    left: 0;
 }
+
+.projects{
+    position: relative;
+    height: 70vh;
+    margin: 15vh 0 15vh 0;
+    background: #fff;
+}
+
+.projects_grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.projects_grid .pr{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.pr a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 12px;
+}
+.pr a p{
+    display: none;
+    font-size: 14px;
+}
+.pr a:hover p{
+    display: inline;
+}
+
 .footer{
-    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 15vh 0 15vh 0;
+}
+.footer h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer h1::after{
+    display: block;
+    width: 500px;
+    content: '';
+    opacity: 0.5;
+    border-bottom: 1px solid #000;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin: 8px 0;
+}
+.footer a p{
+    position: relative;
+    display: inline;
+    opacity: 0;
+    font-size: 14px;
+    left: -10px;
+    transition: .3s ease-in;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer a:hover p{
+    display: inline;
+    opacity: 1;
+    left: 0;
 }
